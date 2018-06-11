@@ -14,7 +14,7 @@
 //
 // Using the Azure CLI:
 // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyNodeDevice --output table
-var connectionString = '{Your device connection string here}';
+var connectionString = 'HostName=smart-mirror-hub.azure-devices.net;DeviceId=smart-mirror-device;SharedAccessKey=HfExTajq8Rmc6wF4y5K7JXT4l2rGS4c0xTeBrZPOKfg=';
 
 // Using the Node.js Device SDK for IoT Hub:
 //   https://github.com/Azure/azure-iot-sdk-node

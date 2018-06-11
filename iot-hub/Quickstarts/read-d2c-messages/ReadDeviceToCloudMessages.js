@@ -14,7 +14,7 @@
 //
 // Using the Azure CLI:
 // az iot hub show-connection-string --hub-name {YourIoTHubName} --output table
-var connectionString = '{Your service connection string here}';
+var connectionString = 'HostName=smart-mirror-hub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=124lLKW5lFQPMXgM1XmNvOBLo7uIN6gRwbl8S3BOGT8=';
 
 // Using the Node.js SDK for Azure Event hubs:
 //   https://github.com/Azure/azure-event-hubs-node
@@ -23,6 +23,7 @@ var connectionString = '{Your service connection string here}';
 var { EventHubClient, EventPosition } = require('azure-event-hubs');
 
 var printError = function (err) {
+  console.log('TestERROR');
   console.log(err.message);
 };
 
